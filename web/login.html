@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript">
+        function check(f)
+        {
+            var id=document.getElementById("a").value;
+            var pwd=document.getElementById("b").value;
+           var e1=document.getElementById("d1");
+           var e2=document.getElementById("d2");
+           flag=true;
+            
+            if(id=="")
+            {
+                e1.innerHTML="<font color=red>User Name can't be empty</font>";
+                flag=false;
+            }
+            else
+            {
+                e1.innerHTML="";
+            }
+            if(pwd=="")
+            
+            {
+                 e2.innerHTML="<font color=red>Password can't be empty</font>";
+                 flag=false;
+            }
+            else
+            {
+                 e2.innerHTML="";
+            }
+            return flag;
+        }
+        </script>
+<title>SocialNet-Created by RAHUL BAJAJ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+<style type="text/css">
+.style2 {
+	text-align: center;
+	font-size: xx-large;
+}
+.style3 {
+	font-size: x-large;
+}
+.style4 {
+	color: #0000FF;
+}
+.style5 {
+	font-size: medium;
+}
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="main_resize" style="width: 950px; height: 973px">
+    <div class="header">
+		<div class="logo">
+			<h1><a href="#"><span>Social</span>Net</a></h1>
+		</div>
+&nbsp;
+        <!--/searchform -->
+        <div class="clr">
+		</div>
+		<div class="clr">
+			<img src="images/header_images.jpg" width="923" height="291" alt="" /></div>
+	</div>
+	&nbsp;&nbsp;&nbsp;<div style="position: absolute; width: 937px; height: 53px; z-index: 2; left: 215px; top: 417px" id="layer2" class="style2">
+             <h1>LOGIN PAGE!!!</h1></div>
+	<div style="position: absolute; width: 811px; height: 403px; z-index: 3; left: 367px; top: 512px" id="layer3">
+            <form method="post" action="logincheck" name="f1" onsubmit="return check(f1)">
+		<table style="width: 100%; height: 234px">
+			<tr class="style3">
+				<td style="width: 241px">USER NAME:</td>
+				<td style="width: 359px">
+                                    
+					<input name="Text1" type="text" id="a" style="width: 280px" />
+				</td>
+                                <td>&nbsp;<font size="2"><small><span id="d1"></span></small></font> </td>
+			</tr>
+			<tr class="style3">
+				<td style="width: 241px">PASSWORD:</td>
+				<td style="width: 359px">
+				
+					<input name="Password1" type="password" id="b" style="width: 277px" />
+				</td>
+                                <td>&nbsp;<font size="2"><small><span id="d2"></span></small></font></td>
+			</tr>
+			<tr class="style3">
+				<td style="width: 241px" class="style5">
+				<a href="reg.jsp" class="style4">New User?</a></td>
+				<td style="width: 359px">
+		<input name="Submit1" type="submit" value="LOGIN"  style="width: 248px; height: 46px" />
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+            <table style="width: 100%">
+				<tr>
+					<td style="width: 241px">&nbsp;</td>
+				<td style="height: 82px; width: 199px" class="style5">
+				<a href="forgot1.html" class="style4">Forgot Password!!</a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+		</table>
+            </form>
+                
+        </div>
+        
+		<table style="width: 100%">
+			<tr>
+				<td style="height: 82px; width: 303px"></td>
+			</tr>
+		</table>
+	</div>
+  </div>
+
+</body>
+</html>
